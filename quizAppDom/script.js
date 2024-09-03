@@ -57,6 +57,7 @@ let score = 0;
 
 function loadQuestion() {
     const currentQuizData = quizData[currentQuestion];
+    // add questions title
     document.getElementById('question').textContent = currentQuestion + 1 + ") " + currentQuizData.question;
     const choices = document.querySelectorAll('.choice');
     choices.forEach((choice, index) => {
