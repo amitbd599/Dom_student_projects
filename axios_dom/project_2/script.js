@@ -8,7 +8,7 @@ function data() {
       const posts = response.data;
 
       // Iterate over each post and add it to the table
-      posts.forEach(post => {
+      posts.map((post) => {
         tableBody.innerHTML = tableBody.innerHTML + `
             <tr>
               <td>${post.id}</td>
