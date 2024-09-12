@@ -6,6 +6,8 @@ function getJoke() {
     }
 
     axios.get("https://icanhazdadjoke.com", config).then((res) => {
+        console.log(res.data);
+
         document.getElementById("joke").innerHTML = res.data.joke;
     }).catch(err => {
         console.error(err);
